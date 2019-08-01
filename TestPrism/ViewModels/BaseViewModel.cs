@@ -9,7 +9,7 @@ using Prism.Navigation;
 namespace TestPrism.ViewModels
 {
 	//TODO: should we delete INavigationAware interface? Maybe INavigatedAware instead?
-    public class BaseViewModel : BindableBase, IPageLifecycleAware, INavigatedAware, IInitialize, IAutoInitialize
+    public class BaseViewModel : BindableBase, IPageLifecycleAware, INavigatedAware, IInitialize
 	{
         protected readonly INavigationService navigationService;
 

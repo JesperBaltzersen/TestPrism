@@ -19,8 +19,7 @@ namespace TestPrism
             InitializeComponent();
             //var navParams = new NavigationParameters();
             //navParams.Add()
-            await NavigationService.NavigateAsync(
-                "MainPage", ("isItBool", "AutoInitialized isItBool"), ("title", "AutoInitialized title"));
+            await NavigationService.NavigateAsync("MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -28,7 +27,6 @@ namespace TestPrism
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SecondPage, SecondPageViewModel>();
-            containerRegistry.RegisterForNavigation<ThirdPage, ThirdPageViewModel>();
 
         }
 
