@@ -17,8 +17,7 @@ namespace TestPrism
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            //var navParams = new NavigationParameters();
-            //navParams.Add()
+   
             await NavigationService.NavigateAsync("MainPage");
         }
 
